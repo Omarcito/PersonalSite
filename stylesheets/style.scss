@@ -1,1 +1,49 @@
-/*-- Site Wide --*/
+
+body{
+  background-color: white;
+  font-family: courier;
+  img{
+    display: block;
+    margin:  50px auto 40px auto;
+  }
+  p{
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    a{
+      color: rgba(50, 50, 50, 0.7);
+      &:hover{
+        color: blue;
+      }
+    }
+  }
+}
+footer{
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 0.6em;
+  hr{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px){
+  body{
+    img{
+      height: 200px;
+      width: 200px;
+    }
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px){
+  body{
+    width: 500px;
+    margin: auto; 
+    img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+}

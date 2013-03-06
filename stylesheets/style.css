@@ -1,1 +1,36 @@
-/*-- Site Wide --*/
+body {
+  background-color: white;
+  font-family: courier; }
+  body img {
+    display: block;
+    margin: 50px auto 40px auto; }
+  body p {
+    margin: auto;
+    text-align: center;
+    font-size: 1em; }
+    body p a {
+      color: rgba(50, 50, 50, 0.7); }
+      body p a:hover {
+        color: blue; }
+
+footer {
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 0.6em; }
+  footer hr {
+    width: 80%; }
+
+@media screen and (min-width: 320px) {
+  body {
+    width: 95%; }
+    body img {
+      height: 200px;
+      width: 200px; } }
+@media screen and (min-width: 768px) {
+  body {
+    width: 500px;
+    margin: auto; }
+    body img {
+      height: 300px;
+      width: 300px; } }
