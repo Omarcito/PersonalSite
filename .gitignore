@@ -1,0 +1,8 @@
+.DS_Store
+config
+*.tmproj
+public/audio
+build
+.dropbox
+.sass-cache
+Icon
