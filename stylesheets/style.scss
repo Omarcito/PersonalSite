@@ -2,6 +2,7 @@
 body{
   background-color: white;
   font-family: courier;
+
   img{
     display: block;
     margin:  50px auto 40px auto;
@@ -10,6 +11,10 @@ body{
     margin: auto;
     text-align: center;
     font-size: 1em;
+    line-height:150%;
+    span{
+      font-size:1.2em;
+    }
     a{
       color: rgba(50, 50, 50, 0.7);
       &:hover{

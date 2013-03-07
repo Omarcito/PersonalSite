@@ -7,7 +7,10 @@ body {
   body p {
     margin: auto;
     text-align: center;
-    font-size: 1em; }
+    font-size: 1em;
+    line-height: 150%; }
+    body p span {
+      font-size: 1.2em; }
     body p a {
       color: rgba(50, 50, 50, 0.7); }
       body p a:hover {
