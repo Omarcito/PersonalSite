@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: courier; }
+  font-family: Inconsolata; }
   body img {
     display: block;
     margin: 50px auto 40px auto; }
@@ -10,7 +10,7 @@ body {
     font-size: 1em;
     line-height: 150%; }
     body p span {
-      font-size: 1.2em; }
+      font-size: 1.1em; }
     body p a {
       color: rgba(50, 50, 50, 0.7); }
       body p a:hover {
