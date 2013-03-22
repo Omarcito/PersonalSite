@@ -34,7 +34,7 @@ footer {
       width: 200px; } }
 @media screen and (min-width: 768px) {
   body {
-    width: 500px;
+    width: 600px;
     margin: auto; }
     body img {
       height: 300px;
