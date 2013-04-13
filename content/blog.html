@@ -1,0 +1,17 @@
+---
+title: Blog
+---
+
+<div>
+  {{#site}}
+    {{#collections}}
+      {{#posts}}
+        {{#pages}}
+          <div class="blog">
+            {{{ content }}}
+          </div>
+        {{/pages}}
+      {{/posts}}
+    {{/collections}}
+  {{/site}}
+</div>
