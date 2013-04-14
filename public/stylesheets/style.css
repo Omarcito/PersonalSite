@@ -1,6 +1,14 @@
 body {
-  background-color: white;
   font-family: Inconsolata; }
+  body header {
+    border-bottom: 1px solid black; }
+    body header #motto {
+      font-family: 'Fjalla One', sans-serif;
+      text-align: center; }
+    body header nav ul li {
+      display: inline; }
+      body header nav ul li a {
+        text-decoration: none; }
   body img {
     display: block;
     margin: 50px auto 40px auto; }
@@ -15,27 +23,78 @@ body {
       color: rgba(50, 50, 50, 0.7); }
       body p a:hover {
         color: blue; }
-
-footer {
-  border: 1px solid transparent;
-  margin: auto;
-  text-align: center;
-  font-family: helvetica;
-  font-size: 0.6em;
-  padding-bottom: 15px; }
-  footer hr {
-    width: 80%; }
+  body footer {
+    border: 1px solid transparent;
+    margin: auto;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 0.6em;
+    padding-bottom: 15px; }
+    body footer hr {
+      width: 85%; }
+  body .postTitle {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left; }
+  body .postPublished {
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left; }
+  body .postAuthor {
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left; }
+  body .postTitleLink {
+    text-decoration: none;
+    color: black; }
+  body #disqus_thread {
+    width: 85%;
+    padding: 3%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white; }
+  body .blog {
+    height: auto;
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(245, 245, 245, 0.9);
+    margin: auto;
+    margin-top: 5px;
+    padding: 3%; }
+    body .blog .blog_img {
+      height: 350px;
+      width: 350px;
+      display: inline-block;
+      float: right; }
 
 @media screen and (min-width: 320px) {
   body {
     width: 95%; }
     body img {
       height: 200px;
-      width: 200px; } }
+      width: 200px; }
+    body #motto {
+      font-size: 2em; } }
 @media screen and (min-width: 768px) {
   body {
     width: 600px;
     margin: auto; }
     body img {
       height: 300px;
-      width: 300px; } }
+      width: 300px; }
+    body #motto {
+      font-size: 3em; }
+    body .postTitle {
+      font-size: 2em; }
+    body .postPublished {
+      font-size: 1.2em; } }

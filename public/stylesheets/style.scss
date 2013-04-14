@@ -1,8 +1,23 @@
 
 body{
-  background-color: white;
   font-family: Inconsolata;
-
+  header{
+    border-bottom:1px solid black;
+    #motto{
+        font-family: 'Fjalla One', sans-serif;
+        text-align: center;
+    }
+    nav{
+      ul{
+        li{
+          display:inline;
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
   img{
     display: block;
     margin:  50px auto 40px auto;
@@ -22,18 +37,70 @@ body{
       }
     }
   }
-}
-footer{
-  border: 1px solid transparent;
-  margin: auto;
-  text-align: center;
-  font-family: helvetica;
-  font-size: 0.6em;
-  padding-bottom: 15px;
-  hr{
-    width: 80%;
+  footer{
+    border: 1px solid transparent;
+    margin: auto;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 0.6em;
+    padding-bottom: 15px;
+    hr{
+      width: 85%;
+    }
+  }
+  .postTitle{
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+    font-family:  'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .postPublished{
+    -webkit-margin-before:5px;
+    -webkit-margin-after:0px;
+    font-family:  'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .postAuthor{
+    -webkit-margin-before:5px;
+    -webkit-margin-after:0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .postTitleLink{
+    text-decoration:none;
+    color:black;
+  }
+  #disqus_thread{
+    width:85%;
+    padding:3%;
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid black;
+    border-radius:2px;
+    background-color: white;
+  }
+  .blog{
+    height:auto;
+    width:85%;
+    border:1px solid black;
+    border-radius:2px;
+    background-color:rgba(245,245,245,.9);
+    margin:auto;
+    margin-top:5px;   
+    padding:3%;
+    .blog_img{
+      height:350px;
+      width:350px;
+      display:inline-block;
+      float:right;
+    }
   }
 }
+
 
 @media screen and (min-width: 320px){
   body{
@@ -42,8 +109,13 @@ footer{
       width: 200px;
     }
     width: 95%;
+    #motto{
+      font-size: 2em;
+    }
   }
 }
+
+
 @media screen and (min-width: 768px){
   body{
     width: 600px;
@@ -51,6 +123,15 @@ footer{
     img{
       height: 300px;
       width: 300px;
+    }
+    #motto{
+      font-size: 3em;
+    }
+    .postTitle{
+      font-size: 2em;
+    }
+    .postPublished{
+      font-size: 1.2em;
     }
   }
 }
