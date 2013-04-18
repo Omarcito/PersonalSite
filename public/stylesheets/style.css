@@ -1,3 +1,14 @@
+/*---------------Site Wide CSS---------------*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.stuck_js {
+  position: fixed;
+  top: 0px;
+  z-index: 30; }
+
 body {
   font-family: Inconsolata; }
   body header {
@@ -71,12 +82,29 @@ body {
     margin: auto;
     margin-top: 5px;
     padding: 3%; }
+    body .blog p {
+      text-align: left; }
     body .blog .blog_img {
       height: 350px;
       width: 350px;
       display: inline-block;
       float: right; }
+    body .blog blockquote {
+      border: 1px solid grey;
+      border-radius: 3px; }
+      body .blog blockquote p {
+        text-align: center; }
+    body .blog pre {
+      border: 1px solid grey;
+      border-radius: 3px;
+      background-color: #696969;
+      padding: 10px; }
+    body .blog code {
+      border-radius: 3px;
+      background-color: #696969;
+      color: white; }
 
+/*---------------Mobile Width CSS---------------*/
 @media screen and (min-width: 320px) {
   body {
     width: 95%; }
@@ -85,9 +113,24 @@ body {
       width: 200px; }
     body #motto {
       font-size: 2em; } }
+/*---------------iPad Width CSS---------------*/
 @media screen and (min-width: 768px) {
   body {
     width: 600px;
+    margin: auto; }
+    body img {
+      height: 300px;
+      width: 300px; }
+    body #motto {
+      font-size: 3em; }
+    body .postTitle {
+      font-size: 2em; }
+    body .postPublished {
+      font-size: 1.2em; } }
+/*---------------Full Width CSS---------------*/
+@media screen and (min-width: 1000px) {
+  body {
+    width: 990px;
     margin: auto; }
     body img {
       height: 300px;
