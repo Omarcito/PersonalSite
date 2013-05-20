@@ -1,143 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 /*---------------Site Wide CSS---------------*/
 .group:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 .stuck_js {
   position: fixed;
   top: 0px;
-  z-index: 30; }
+  z-index: 30;
+}
 
 body {
-  font-family: Inconsolata; }
-  body header {
-    border-bottom: 1px solid black; }
-    body header #motto {
-      font-family: 'Fjalla One', sans-serif;
-      text-align: center; }
-    body header nav ul li {
-      display: inline; }
-      body header nav ul li a {
-        text-decoration: none; }
-  body img {
-    display: block;
-    margin: 50px auto 40px auto; }
-  body p {
-    margin: auto;
-    text-align: center;
-    font-size: 1em;
-    line-height: 150%; }
-    body p span {
-      font-size: 1em; }
-    body p a {
-      color: rgba(50, 50, 50, 0.7); }
-      body p a:hover {
-        color: blue; }
-  body footer {
-    border: 1px solid transparent;
-    margin: auto;
-    text-align: center;
-    font-family: helvetica;
-    font-size: 0.6em;
-    padding-bottom: 15px; }
-    body footer hr {
-      width: 85%; }
-  body .postTitle {
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bolder;
-    text-align: left; }
-  body .postPublished {
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 0px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bolder;
-    text-align: left; }
-  body .postAuthor {
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 0px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bolder;
-    text-align: left; }
-  body .postTitleLink {
-    text-decoration: none;
-    color: black; }
-  body #disqus_thread {
-    width: 85%;
-    padding: 3%;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    border-radius: 2px;
-    background-color: white; }
-  body .blog {
-    height: auto;
-    width: 85%;
-    border: 1px solid black;
-    border-radius: 2px;
-    background-color: rgba(245, 245, 245, 0.9);
-    margin: auto;
-    margin-top: 5px;
-    padding: 3%; }
-    body .blog p {
-      text-align: left; }
-    body .blog .blog_img {
-      height: 350px;
-      width: 350px;
-      display: inline-block;
-      float: right; }
-    body .blog blockquote {
-      border: 1px solid grey;
-      border-radius: 3px; }
-      body .blog blockquote p {
-        text-align: center; }
-    body .blog pre {
-      border: 1px solid grey;
-      border-radius: 3px;
-      background-color: #696969;
-      padding: 10px; }
-    body .blog code {
-      border-radius: 3px;
-      background-color: #696969;
-      color: white; }
+  margin: auto;
+  font-family: 'Abel', sans-serif;
+}
+body header {
+  border-bottom: 1px solid black;
+}
+body header #motto {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+}
+body header nav {
+  margin-left: 50px;
+}
+body header nav ul li {
+  display: inline;
+}
+body header nav ul li a {
+  text-decoration: none;
+}
+body img {
+  display: block;
+  margin: 50px auto 40px auto;
+}
+body p {
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  line-height: 150%;
+}
+body p span {
+  font-size: 1em;
+}
+body p a {
+  color: rgba(50, 50, 50, 0.7);
+}
+body p a:hover {
+  color: blue;
+}
+body footer {
+  border: 1px solid transparent;
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 0.6em;
+  padding-bottom: 15px;
+}
+body footer hr {
+  width: 85%;
+}
+body .postTitle {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bolder;
+  text-align: left;
+}
+body .postPublished {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bolder;
+  text-align: left;
+}
+body .postAuthor {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bolder;
+  text-align: left;
+}
+body .postTitleLink {
+  text-decoration: none;
+  color: black;
+}
+body #disqus_thread {
+  width: 85%;
+  padding: 3%;
+  margin: 5px auto 15px auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+body .blog {
+  height: auto;
+  width: 85%;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: rgba(245, 245, 245, 0.9);
+  margin: 5px auto;
+  padding: 3%;
+}
+body .blog p {
+  text-align: left;
+}
+body .blog .blog_img {
+  height: 350px;
+  width: 350px;
+  display: inline-block;
+  float: right;
+}
+body .blog blockquote {
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+body .blog blockquote p {
+  text-align: center;
+}
+body .blog pre {
+  font-family: Inconsolata;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background-color: #A9A9A9;
+  padding: 10px;
+  line-height: 1.2em;
+}
+body .blog code {
+  font-family: Inconsolata;
+  border-radius: 3px;
+  background-color: #A9A9A9;
+  padding: 1px 4px;
+}
 
 /*---------------Mobile Width CSS---------------*/
 @media screen and (min-width: 320px) {
   body {
-    width: 95%; }
-    body img {
-      height: 200px;
-      width: 200px; }
-    body #motto {
-      font-size: 2em; } }
+    width: 315px;
+  }
+  body img {
+    height: 200px;
+    width: 200px;
+  }
+  body header #motto {
+    font-size: 2em;
+  }
+  body header nav {
+    margin-left: 30px;
+  }
+  body header nav a {
+    font-size: 1.2em;
+  }
+  body .postTitle {
+    font-size: 1.3em;
+  }
+  body .postPublished {
+    font-size: 1em;
+  }
+}
 /*---------------iPad Width CSS---------------*/
 @media screen and (min-width: 768px) {
   body {
-    width: 600px;
-    margin: auto; }
-    body img {
-      height: 300px;
-      width: 300px; }
-    body #motto {
-      font-size: 3em; }
-    body .postTitle {
-      font-size: 2em; }
-    body .postPublished {
-      font-size: 1.2em; } }
+    width: 700px;
+    margin: auto;
+  }
+  body img {
+    height: 300px;
+    width: 300px;
+  }
+  body header #motto {
+    font-size: 3em;
+  }
+  body header nav a {
+    font-size: 1.4em;
+  }
+  body .postTitle {
+    font-size: 2em;
+  }
+  body .postPublished {
+    font-size: 1.2em;
+  }
+}
 /*---------------Full Width CSS---------------*/
 @media screen and (min-width: 1000px) {
   body {
     width: 990px;
-    margin: auto; }
-    body img {
-      height: 300px;
-      width: 300px; }
-    body #motto {
-      font-size: 3em; }
-    body .postTitle {
-      font-size: 2em; }
-    body .postPublished {
-      font-size: 1.2em; } }
+    margin: auto;
+  }
+  body img {
+    height: 300px;
+    width: 300px;
+  }
+  body header #motto {
+    font-size: 3em;
+  }
+  body .postTitle {
+    font-size: 2em;
+  }
+  body .postPublished {
+    font-size: 1.2em;
+  }
+}
