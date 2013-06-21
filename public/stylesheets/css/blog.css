@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stuck_js {
+  position: fixed;
+  top: 0px;
+  z-index: 30;
+}
+
+a {
+  color: rgba(50, 50, 50, 0.7);
+}
+a:hover {
+  color: blue;
+}
+
+/*---------------Mobile Portrait Width: 320px---------------*/
+@media screen and (min-width: 320px) {
+  body {
+    width: 315px;
+    font-family: 'Abel', sans-serif;
+  }
+}
+/*---------------Mobile Landscape Width: 480px---------------*/
+@media screen and (min-width: 480px) {
+  body {
+    width: 470px;
+  }
+}
+/*---------------Tablet Portrait Width: 768px---------------*/
+@media screen and (min-width: 768px) {
+  body {
+    width: 750px;
+  }
+}
+/*---------------Tablet Landscape Width: 1024px---------------*/
+@media screen and (min-width: 1024px) {
+  body {
+    width: 990px;
+  }
+}
+/*---------------Desktop Width: 1200px---------------*/
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1100px;
+  }
+}
+footer {
+  border: 1px solid transparent;
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 0.6em;
+  padding-bottom: 15px;
+}
+footer hr {
+  width: 85%;
+}
+
+/*---------------Mobile Portrait Width: 320px---------------*/
+@media screen and (min-width: 320px) {
+  header {
+    border-bottom: 1px solid black;
+  }
+  header #motto {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    font-size: 2em;
+  }
+  header nav {
+    margin-left: 30px;
+  }
+  header nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  .blog {
+    height: auto;
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(245, 245, 245, 0.9);
+    margin: 5px auto;
+    padding: 3%;
+  }
+  .blog p {
+    text-align: left;
+  }
+  .blog .blog_img {
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    float: right;
+  }
+  .blog blockquote {
+    border: 1px solid grey;
+    border-radius: 3px;
+  }
+  .blog blockquote p {
+    text-align: center;
+  }
+  .blog pre {
+    font-family: Inconsolata;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: #A9A9A9;
+    padding: 10px;
+    line-height: 1.2em;
+  }
+  .blog code {
+    font-family: Inconsolata;
+    border-radius: 3px;
+    background-color: #A9A9A9;
+    padding: 1px 4px;
+  }
+
+  .postTitle {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  .postPublished {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  .postAuthor {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .postTitleLink {
+    text-decoration: none;
+    color: black;
+  }
+
+  #disqus_thread {
+    width: 85%;
+    padding: 3%;
+    margin: 5px auto 15px auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+  }
+}
+/*---------------Mobile Landscape Width: 480px---------------*/
+/*---------------Tablet Portrait Width: 768px---------------*/
+@media screen and (min-width: 768px) {
+  header #motto {
+    font-size: 3em;
+  }
+  header nav a {
+    font-size: 1.4em;
+  }
+
+  .postTitle {
+    font-size: 2em;
+  }
+
+  .postPublished {
+    font-size: 1.2em;
+  }
+}
+/*---------------Tablet Landscape Width: 1024px---------------*/
+/*---------------Desktop Width: 1200px---------------*/
+@media screen and (min-width: 1200px) {
+  header #motto {
+    font-size: 3em;
+  }
+
+  .postTitle {
+    font-size: 2em;
+  }
+
+  .postPublished {
+    font-size: 1.2em;
+  }
+}

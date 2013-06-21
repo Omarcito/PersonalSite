@@ -1,0 +1,138 @@
+
+@import "compass/css3";
+@import "compass/reset";
+@import "base";
+@import "footer";
+
+
+/*---------------Mobile Portrait Width: 320px---------------*/
+@media screen and (min-width: 320px){
+  header{
+    border-bottom:1px solid black;
+    #motto{
+      font-family: 'Advent Pro', sans-serif;
+      text-align: center;
+      font-size: 2em;
+    }
+    nav{
+      margin-left: 30px;
+      a{
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+    }
+  }
+  .blog{
+    height:auto;
+    width:85%;
+    border:1px solid black;
+    border-radius:2px;
+    background-color:rgba(245,245,245,.9);
+    margin:5px auto;
+    padding:3%;
+    p{
+      text-align: left;
+    }
+    .blog_img{
+      height:350px;
+      width:350px;
+      display:inline-block;
+      float:right;
+    }
+    blockquote{
+      border:1px solid grey;
+      border-radius: 3px;
+      p{
+        text-align: center;
+      }
+    }
+    pre{
+      font-family: Inconsolata;
+      border:1px solid grey;
+      border-radius: 3px;
+      background-color: #A9A9A9;
+      padding:10px;
+      line-height: 1.2em;
+    }
+    code{
+      font-family: Inconsolata;
+      border-radius: 3px;
+      background-color: #A9A9A9;
+      padding:1px 4px;
+    }
+  }
+  .postTitle{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 1.3em;
+  }
+  .postPublished{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 1em;
+  }
+  .postAuthor{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .postTitleLink{
+    text-decoration:none;
+    color:black;
+  }
+  #disqus_thread{
+    width:85%;
+    padding:3%;
+    margin:5px auto 15px auto;
+    border:1px solid black;
+    border-radius:2px;
+    background-color: white;
+  }
+}
+
+/*---------------Mobile Landscape Width: 480px---------------*/
+@media screen and (min-width: 480px){
+
+}
+
+/*---------------Tablet Portrait Width: 768px---------------*/
+@media screen and (min-width: 768px){
+  header{
+    #motto{
+      font-size: 3em;
+    }
+    nav{
+      a{
+        font-size: 1.4em;
+      }
+    }
+  }
+  .postTitle{
+    font-size: 2em;
+  }
+  .postPublished{
+    font-size: 1.2em;
+  }
+}
+
+/*---------------Tablet Landscape Width: 1024px---------------*/
+@media screen and (min-width: 1024px){
+
+}
+
+/*---------------Desktop Width: 1200px---------------*/
+@media screen and (min-width: 1200px){
+  header{
+    #motto{
+      font-size: 3em;
+      }
+  }
+  .postTitle{
+    font-size: 2em;
+  }
+  .postPublished{
+    font-size: 1.2em;
+  }
+}
